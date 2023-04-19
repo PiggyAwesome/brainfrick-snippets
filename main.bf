@@ -4,7 +4,7 @@ bf
 
 
 >+>+>+<<<
-[-]>[-]>[-]>[-] # Clean all cells
+[[[[-]>]>]>] # Clean all cells (Start at cell 1, stops when 3 clean cells in a row)
 <<< # Go back to start
 
 +++++++. >
