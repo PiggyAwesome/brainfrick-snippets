@@ -240,5 +240,5 @@ if number1 == 0
 ]
 
 
-[-]>[-]>[-]>[-]>[-]> # Clean all cells (Start at cell 1, stops when 3 clean cells in a row)
+[-]>[-]>[-]>[-]>[-]> # Clean all cells (Start at cell 1 and stops when 3 clean cells in a row)
 <<<<< # Go back to start
