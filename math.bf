@@ -1,7 +1,7 @@
 >>>
 
-+++++++. >
-++++++. <
+++++++++. >
+++. <
 
 
 
@@ -240,5 +240,53 @@ if number1 == 0
 ]
 
 
-[-]>[-]>[-]>[-]>[-]> # Clean all cells (Start at cell 1 and stops when 3 clean cells in a row)
-<<<<< # Go back to start
+###########
+DIVIDE
+###########
+// I will optimise, organise and document this function better at a later date.
+
+>>>> // move to x
+
+>>>>> // move to e
++ // add 1 to avoid ending loop
+[
+
+
+[-] // clean e
+<<<<< // move to y
+
+// repopulate c with y
+[->>>+>+<<<<] // transfers y to c and d
+>>>> // move to d
+[-<<<<+>>>>] // transfers d to y
+
+// add c to a
+< // move to c
+[-<+>] // transfers c to a
+<< // move to n
++ // add 1 to n
+
+// repopulate e with x
+<< // move to x 
+[->>>>>>+>+<<<<<<<] // transfers x to e and f
+>>>>>>> // move to f
+[-<<<<<<<+>>>>>>>] // transfers f to x
+
+// repopulate g with a
+<<<< // move to a
+[->>>>>+>+<<<<<<] // transfers a to g and h
+>>>>>> // move to h
+[-<<<<<<+>>>>>>] // transfers h to a
+
+// check if g = e
+< // move to g
+[-<<->>] // subtract g from e
+<< // move to e
+] // this will repeat if e /= 0
+
+
+<<<< // move to n
+[-<<<<<+>>>>>] // transfers n to cell 3
+<<<< // move to cell 4
+[-]>[-]>[-]>[-]>[-]>[-]>[-]> # Clean all cells 
+<<<<<<< # Go back to start
