@@ -12,7 +12,7 @@ math.bf
 ##### Fully operational 2 integer calculator, I made from scratch in brainfuck. (Instead of studing for GCSE)
 
 Functions: 
-- [x] Plus 2 integers together
+- [x] Plus 2 integers together (x,y ∈ ℤ)
 - [ ] Subtract 2 integers from each other
-- [x] Multiply 2 integers with each other
-- [ ] Divide 2 integers by each other
+- [x] Multiply 2 integers with each other (x,y ∈ ℤ)
+- [x] Divide 2 integers by each other (x,y ∈ ℤ and x/y ∈ ℤ)
